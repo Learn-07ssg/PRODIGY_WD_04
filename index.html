@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saniya - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(10, 10, 68);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 80px;
+        background-color: rgb(7, 7, 54);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
+      nav ul li a:hover {
+        color: rgb(230, 230, 251);
+        font-size: 1.06rem;
+      }
+      main hr {
+        border: 0;
+        background-color: #8e8bc1;
+        margin: 60px 84px;
+        height: 3px;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+      .Firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 0;
+      }
+      .Firstsection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 3rem;
+      }
+      .rightSection img {
+        width: 80%;
+      }
+      .Secondsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .Secondsection .box {
+        background: white;
+        height: 2px;
+        width: 77vw;
+        margin: 56px 0;
+        display: flex;
+      }
+      .Secondsection .vertical {
+        background: white;
+        width: 2px;
+        height: 129px;
+        margin: 0 200px;
+      }
+      .purple {
+        color: rgb(145, 85, 201);
+      }
+      #element {
+        color: rgb(145, 85, 201);
+      }
+      .text-gray {
+        color: gray;
+      }
+      .image-top {
+        width: 52px;
+        position: relative;
+        top: -54px;
+        left: -17px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 25px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 99px;
+        width: 150px;
+        color: darkgray;
+        font-size: 9px;
+      }
+      /* Style for buttons */
+      .resume-button,
+      .linkedin-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-right: 10px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      /* Resume button style */
+      .resume-button {
+        background-color: #191958; /* Change the color to your preference */
+      }
+
+      /* LinkedIn button style */
+      .linkedin-button {
+        background-color: #0077b5; /* Change the color to your preference */
+      }
+
+      /* Hover effect for buttons */
+      .resume-button:hover,
+      .linkedin-button:hover {
+        opacity: 0.8;
+      }
+
+      /* footer {
+        background-color: rgb(24 24 76);
+        height: 233px;
+      }
+      .footer {
+        display: flex;
+        padding: 34px 122px;
+      } */
+      /* Reset default margin and padding for footer */
+      footer {
+        margin-top: 50px; /* Adjust this value according to your layout */
+        background-color: #0d2036;
+        color: #fff;
+        padding: 30px 0;
+      }
+
+      /* Style footer content */
+      .footer-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .footer-section {
+        width: 25%;
+        padding: 10px;
+      }
+
+      .footer-section h2 {
+        color: #fff;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+
+      .footer-section p,
+      .footer-section ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .footer-section a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .footer-section a:hover {
+        text-decoration: underline;
+      }
+
+      /* Style footer bottom */
+      .footer-bottom {
+        text-align: center;
+        padding-top: 10px;
+        border-top: 1px solid #777;
+      }
+
+      .footer-bottom p {
+        margin: 0;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Saniya's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="Firstsection">
+        <div class="leftSection">
+          Hi I am <span class="purple">Saniya</span>
+          <div>and I am a web developer</div>
+          <span id="element"></span>
+          <div class="buttons-section">
+            <a href="link-to-your-resume" class="resume-button">Resume</a>
+            <a href="link-to-your-linkedin" class="linkedin-button">LinkedIn</a>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="bg.jpeg" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="Secondsection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="" />
+            <div class="vertical-title">Html developer (2010-2015)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Cupiditate inventore dolor quos tempora illum magnam nemo optio
+              eaque quas, assumenda dolorum exercitationem ex harum sed! Fugit
+              porro ab aperiam atque. Nemo neque eligendi asperiores sed
+              corrupti quo mollitia! Error non voluptate minima ipsa quibusdam
+              sit maiores? Asperiores facilis fugit perferendis eveniet rem aut
+              distinctio nostrum explicabo, consectetur dolores illo libero?
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="" />
+            <div class="vertical-title">Html developer (2010-2015)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Cupiditate inventore dolor quos tempora illum magnam nemo optio
+              eaque quas, assumenda dolorum exercitationem ex harum sed! Fugit
+              porro ab aperiam atque. Nemo neque eligendi asperiores sed
+              corrupti quo mollitia! Error non voluptate minima ipsa quibusdam
+              sit maiores? Asperiores facilis fugit perferendis eveniet rem aut
+              distinctio nostrum explicabo, consectetur dolores illo libero?
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="" />
+            <div class="vertical-title">Html developer (2010-2015)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Cupiditate inventore dolor quos tempora illum magnam nemo optio
+              eaque quas, assumenda dolorum exercitationem ex harum sed! Fugit
+              porro ab aperiam atque. Nemo neque eligendi asperiores sed
+              corrupti quo mollitia! Error non voluptate minima ipsa quibusdam
+              sit maiores? Asperiores facilis fugit perferendis eveniet rem aut
+              distinctio nostrum explicabo, consectetur dolores illo libero?
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="developer.png" alt="" />
+            <div class="vertical-title">Html developer (2010-2015)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Cupiditate inventore dolor quos tempora illum magnam nemo optio
+              eaque quas, assumenda dolorum exercitationem ex harum sed! Fugit
+              porro ab aperiam atque. Nemo neque eligendi asperiores sed
+              corrupti quo mollitia! Error non voluptate minima ipsa quibusdam
+              sit maiores? Asperiores facilis fugit perferendis eveniet rem aut
+              distinctio nostrum explicabo, consectetur dolores illo libero?
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- <footer>
+        <div class="footer">
+            <div class="footer-First">
+                <h3>Saniya's Portfolio</h3>
+            </div>
+            <div class="footer-Second"></div>
+            <div class="footer-Third"></div>
+            <div class="footer-Fourth"></div>
+        </div>
+    </footer> -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h2>About Us</h2>
+          <p>Your company description goes here.</p>
+        </div>
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h2>Contact Information</h2>
+          <ul>
+            <li>Email: example@example.com</li>
+            <li>Phone: 123-456-7890</li>
+            <li>Address: 123 Street, City, Country</li>
+          </ul>
+        </div>
+        <div class="footer-section social">
+          <h2>Follow Us</h2>
+          <ul>
+            <li>
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 YourWebsite.com | All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer(Front-end)", "Web Designer."],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
